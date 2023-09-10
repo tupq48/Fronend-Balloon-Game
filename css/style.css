@@ -1,0 +1,94 @@
+body {
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.balloon {
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    /* display: inline-block; */
+    top: 100vh;
+}
+
+.balloon-red {
+    background-image: url(../images/balloon-red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.balloon-blue {
+    background-image: url(../images/balloon-blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.balloon-green {
+    background-image: url(../images/balloon-green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.balloon-violet {
+    background-image: url(../images/balloon-violet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.balloon-yellow {
+    background-image: url(../images/balloon-yellow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.balloon-sad {
+    width: 80px;
+    height: 160px;
+    position: relative;
+    background-image: url(../images/sad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.result {
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    background-color: rgba(184, 182, 182, 0.595);
+    bottom: 0;
+    margin: 0 40%;
+    border-radius: 10% 10% 0 0;
+    
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.result > p {
+    justify-self: center;
+}
+
+
+#popup {
+    display: none;
+}
+
+.losed-popup {
+    width: 20%;
+    height: 50%;
+    position: fixed; /* Sử dụng 'fixed' thay vì 'absolute' để đảm bảo nó luôn nằm chính giữa màn hình */
+    top: 50%; /* Đặt top là 50% */
+    left: 50%; /* Đặt left là 50% */
+    transform: translate(-50%, -50%); /* Dịch chuyển phần tử điều này để nó nằm chính giữa màn hình */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
