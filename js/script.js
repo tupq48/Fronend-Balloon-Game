@@ -104,6 +104,8 @@ endGame.addEventListener("click", function() {
 })
 
 function reset(event) {
+    speed = 10;
+    timePopup = 1000;
     score = 0;
     isLosed = false;
     elm_score.array.forEach(element => {
